@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "/Css/styleSmall.css" screen and (max-width: 1099px);
+@import "/Css/styleBig.css" screen and (min-width: 1100px);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p, a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.5s ease, border-bottom 0.5s ease;
+}
+
+header.scrolled {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;    
+    cursor: pointer;
+}
+
+.Home {
+    position: relative;
+    background-image: url("/Images/IntroGif.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.Home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+.Home-text {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.Home-text h1{ 
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Home-text h1:last-child{
+    position: absolute;
+    bottom: 5%;
+}
+
+.Home-text p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sectionWhite {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.sectionGray {
+    background-color: rgb(204, 204, 204);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    flex: 2;
+    text-align: center;
+}
+
+.about-text h2 {
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text button {
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-text button:hover {
+    background-color: #ffffff;
+    border: 1px solid rgb(96, 96, 96);
+    color: rgb(96, 96, 96);
+}
+
+.portfolio-item:last-child {
+    margin-right: 0;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.about-me-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.about-me-button-container button {
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-me-button-container button:hover {
+    background-color: #ffffff;
+    border: 1px solid rgb(96, 96, 96);
+    color: rgb(96, 96, 96);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #555;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer-button {
+    text-align: center;
+}
+
+.back-to-top-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top-button:hover{
+    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
