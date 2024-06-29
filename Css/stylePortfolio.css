@@ -22,8 +22,7 @@ body{
 }
 
 .video-section {
-    flex: 0 0 80%;
-    margin-right: 5%;
+    flex: 0 0 72%;
 }
 
 .video-section video {
@@ -34,7 +33,7 @@ body{
 .text-section {
     flex: 0 0 30%;
     background-color: rgba(0, 0, 0, 0.308);
-    padding: 10px;;
+    padding: 10px;
     border-radius: 5%;
     position: relative;
 }
@@ -60,7 +59,8 @@ body{
 .image-row {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 104%;
+    margin-left: 40px;
 }
 
 .image-row img {
