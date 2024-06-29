@@ -1,0 +1,128 @@
+/* styleContact.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1e1c29;
+    background-image: url("/Images/CandiceWickle.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 89vh;
+    padding: 20px; /* Ensure some padding for better spacing */
+}
+
+.contact-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #000000c8; /* Semi-transparent black background */
+    border-radius: 20px;
+    color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: white; 
+}
+
+a:hover{
+    color: #11DC98; 
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    font-size: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #11DC98;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #000000c8;
+}

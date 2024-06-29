@@ -75,15 +75,30 @@ nav ul li a {
 }
 
 .sectionWhite {
-    background-color: white;
-    margin-bottom: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
 }
+
+.sectionWhite a{
+    color: #ffffff;
+}
+
+.sectionWhite a:hover{
+    color: #11DC98;
+}
+
 
 .sectionBlack {
     background-color: rgb(0, 0, 0);
     padding: 50px;
     display: flex;
     align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 aside {

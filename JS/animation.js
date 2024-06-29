@@ -40,3 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('scroll', function() {
+    var scrolled = window.pageYOffset;
+    var parallax = document.querySelectorAll('.sectionWhite');
+    
+    for (var i = 0; i < parallax.length; i++) {
+        var yPos = -(scrolled * 0.5); 
+        parallax[i].style.backgroundPosition = 'center ' + yPos + 'px';
+    }
+});
+
