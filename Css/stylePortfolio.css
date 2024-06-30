@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85.4vh; /* otherwise 100vh with scroll */
 }
 
 .content-section {
@@ -54,6 +54,10 @@ body{
     position: absolute;
     bottom: 10px;
     background-color: transparent;
+}
+
+.text-section button:hover{
+    background-color: #11DC98;
 }
 
 .image-row {

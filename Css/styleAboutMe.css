@@ -55,7 +55,6 @@ body {
 }
 
 .right-box {
-  overflow-wrap: break-word;
   width: 30%;
   height: 700px;
   background-color: #000000c8;
@@ -65,9 +64,39 @@ body {
   padding: 1%;
   border-radius: 20px;
   color: white;
+  overflow-wrap: break-word;
+  word-break: break-word; /* Ensures that long words break properly */
 }
 
-.box h2, .right-box h2{
+.right-box h2 {
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  width: 40px; /* Adjust the size of the icons as needed */
+  height: 40px; /* Adjust the size of the icons as needed */
+  margin-right: 10px;
+}
+
+.skill-details h3 {
+  margin: 0;
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.skill-details p {
+  margin: 0;
+  font-size: 0.9em; /* Adjust font size as needed */
   margin-bottom: 10px;
 }
 
