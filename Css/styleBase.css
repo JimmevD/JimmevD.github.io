@@ -21,7 +21,8 @@ button{
 
 
 button:hover{
-    background-color: #11DC98;
+    border:#11DC98;
+    color: #11DC98;
     font-weight: bolder;
     font-size: 15px;
 }
@@ -79,8 +80,8 @@ nav ul li a:hover {
 }
 
 .back-to-top-button:hover{
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    color: #11DC98;
+    border: solid 2px #11DC98;
 }
 
 .social-icons {
@@ -112,8 +113,6 @@ nav ul a {
     margin-left: auto;
     margin-right: 35px;   
 }
-
-
 
 .Home-text p{
     bottom: 47%;
@@ -183,5 +182,6 @@ nav ul li {
       color: white;
       text-align: center;
   }
+  
   
   

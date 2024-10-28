@@ -6,7 +6,7 @@
     <title>Portfolio Jimme van Duijnhoven</title>
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/stylePortfolio.css">
-    <script src="JS/modal.js"></script> <!-- This script now contains the GIF hover functionality -->
+    <script src="JS/modal.js"></script>
 </head>
 <body>
     <header>
@@ -26,31 +26,17 @@
         <section id="portfolio">
             <h1>My Work</h1>
             <div class="portfolio-grid">
-                <!-- Portfolio Item 1: Demonic Treasure -->
                 <div class="portfolio-item" onclick="window.location.href='demonic-treasure.html'">
                     <img src="Images/Demonic Treasure.png" 
                          data-static="Images/Demonic Treasure.png" 
-                         data-gif="Images/IntroGifSmall.gif" 
+                         data-gif="Images/GameGifs/DemonicTreasureGif.gif" 
                          alt="Demonic Treasure">
                     <div class="portfolio-info">
                         <h3>Demonic Treasure</h3>
                         <p>Side scroller platformer game</p>
                     </div>
                 </div>
-
-                <!-- Portfolio Item 2: Chroma Escape -->
-                <div class="portfolio-item" onclick="window.location.href='chroma-escape.html'">
-                    <img src="Images/Chroma Escape.png" 
-                         data-static="Images/Chroma Escape.png" 
-                         data-gif="Images/IntroGifSmall.gif" 
-                         alt="Chroma Escape">
-                    <div class="portfolio-info">
-                        <h3>Chroma Escape</h3>
-                        <p>Puzzle platformer game</p>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3: Candice Wickle -->
+                
                 <div class="portfolio-item" onclick="window.location.href='candice-wickle.html'">
                     <img src="Images/CandiceWickle.png" 
                          data-static="Images/CandiceWickle.png" 
@@ -62,14 +48,36 @@
                     </div>
                 </div>
 
+                <div class="portfolio-item" onclick="window.location.href='chroma-escape.html'">
+                    <img src="Images/Chroma Escape.png" 
+                         data-static="Images/Chroma Escape.png" 
+                         data-gif="Images/IntroGifSmall.gif" 
+                         alt="Chroma Escape">
+                    <div class="portfolio-info">
+                        <h3>Chroma Escape</h3>
+                        <p>Puzzle platformer game</p>
+                    </div>
+                </div>
+
                 <div class="portfolio-item" onclick="window.location.href='jumpers.html'">
                     <img src="Images/Jumpers.png" 
                          data-static="Images/Jumpers.png"
-                         data-gif="Images/IntroGifSmall.gif" 
+                         data-gif="Images/GameGifs/JumpersGif.gif" 
                          alt="Jumpers">
                     <div class="portfolio-info">
                         <h3>Jumpers</h3>
                         <p>3D speedrun platformer</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" onclick="window.location.href='Knon-Room.html'">
+                    <img src="Images/KnonRoom.png" 
+                         data-static="Images/KnonRoom.png" 
+                         data-gif="Images/GameGifs/KnonRoomGif.gif" 
+                         alt="KnonRoom">
+                    <div class="portfolio-info">
+                        <h3>Knon Room</h3>
+                        <p>2D Bullet hell</p>
                     </div>
                 </div>
             </div>
@@ -85,7 +93,6 @@
     </footer>
 
     <script>
-        // Change the image to a GIF on hover and revert on mouse out
         document.querySelectorAll('.portfolio-item img').forEach(item => {
             item.addEventListener('mouseover', function() {
                 this.src = this.getAttribute('data-gif');

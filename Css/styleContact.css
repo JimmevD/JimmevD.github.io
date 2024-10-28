@@ -117,7 +117,8 @@ a:hover{
 }
 
 .contact-form button:hover {
-    background-color: #11DC98;
+    color: #11DC98;
+    border: solid 2px #11DC98;
 }
 
 .footer {

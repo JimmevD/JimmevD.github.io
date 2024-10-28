@@ -4,27 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demonic Treasure</title>
-    <link rel="stylesheet" href="Css/styleBase.css">
+    <link rel="stylesheet" href="Css/styleBase.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="Css/styleBasePortfolioItem.css"> <!-- Shared styles for portfolio items -->
+    <link rel="stylesheet" href="Css/styleDemonicTreasure.css"> <!-- Specific styles for Demonic Treasure -->
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="portfolio.html" class="back-button">Back</a>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <a><strong>Jimme van Duijnhoven</strong></a>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <h1>Demonic Treasure</h1>
-        <p>This is a side scroller platformer where the player uses the character’s powers to switch between normal and demon states...</p>
+    <main class="project-container">
+        <div class="project-content">
+            <h1 class="section-header">Demonic Treasure</h1>
+            <!-- Left Section (Video and Contributions) -->
+            <div class="left-section">
+                <!-- Project Video Embed Section -->
+                <section class="project-video">
+                    <iframe src="https://www.youtube.com/embed/DJYHuwjp_XM" title="Demonic Treasure" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <!-- Contributions Section -->
+                <section class="project-details">
+                    <h2>About the Project</h2>
+                    <h3>Concept</h3>
+                    <p>This is a side-scroller platformer where the player uses the character’s powers to switch between normal and demon states.
+                        Using this power the player has to navigate through, over and under obstacles to find their way to the treasure chest.
+                    </p>
+
+                    <h3>Details</h3>
+                    <p> <b>Engine:</b> Unreal Engine  </br>
+                        <b>Genre:</b> Side scroller platformer</br>
+                        <b>Platform:</b> PC (Windows)
+                    </p>
+                    <a href="https://blubluj.itch.io/demonic-treasure" target=”_blank” class="download-button">Download the Game</a>
+                </section>
+            </div>
+
+            <!-- Right Section (Project Details) -->
+            <div class="right-section">
+                <section class="project-contribution">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <h3>Mechanics Design</h3>
+                        <li>Designed and implemented core gameplay mechanics</li>
+                        <li>Designed and implemented obstacles around main mechanics</li>
+                        <li>Designed replayability by making coins</li>
+                        
+                        <br></br>
+                        <h3>Level Design</h3>
+                        <li>Made progressively harder levels</li>
+                        <li>Designed and implemented core gameplay mechanics</li>
+                        
+                        <br></br>
+                        <h3>Testing</h3>
+                        <li>Tested with different users to see if it was easy enough</li>
+                        <li>Tested levels and mechanics for bugs</li>
+                        <li>Gathered feedback from forms and in person</li>
+
+                        <br></br>
+                        <h3>Programming</h3>
+                        <li>Worked with blueprints in Unreal Engine</li>
+                        <li>Implemented animations based on free models</li>
+                        <li>Optimized the code for better performance</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
 
+    <!-- Return Button -->
+    <a href="portfolio.html" class="back-button">⟵</a>
 
     <footer class="footer">
         <div class="social-icons">
@@ -34,17 +90,8 @@
         </div>
     </footer>
     <style>
-        .back-button {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 20px;
-        }
-        .back-button:hover {
-            background-color: #45a049;
+        .project-container {
+            background-image: url("/Images/Demonic Treasure.png");
         }
     </style>
 </body>

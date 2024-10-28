@@ -112,3 +112,9 @@ body {
     bottom: 10px;
     right: 10px;
 }
+
+.cv-button:hover{
+    color: #11DC98;
+    border: solid 2px #11DC98;
+    transform: scale(1.04);
+}

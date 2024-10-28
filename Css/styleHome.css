@@ -128,7 +128,8 @@ aside {
 }
 
 .about-text button:hover {
-    background-color: #11DC98;
+    color: #11DC98;
+    border: solid 2px #11DC98;
 }
 
 .portfolio-item:last-child {
@@ -159,7 +160,8 @@ aside {
 }
 
 .about-me-button-container button:hover {
-    background-color: #11DC98;
+    color: #11DC98;
+    border: solid 2px #11DC98;
 }
 
 .contact-container {
@@ -213,10 +215,6 @@ aside {
     transition: color 0.3s ease;
 }
 
-.contact-info ul li a:hover {
-    color: #555;
-}
-
 .contact-button {
     position: absolute;
     right: 40px;
@@ -234,7 +232,8 @@ aside {
 }
 
 .contact-button button:hover {
-    background-color: #11DC98;
+    color: #11DC98;
+    border: solid 2px #11DC98;
 }
 
 .contact-item {
