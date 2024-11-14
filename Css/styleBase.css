@@ -53,6 +53,15 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul a strong{
+    color: white
+}
+
+nav ul li b {
+    color: #11DC98;
+    text-decoration: none;
+}
+
 nav ul li a:hover {
     color: #11DC98;
     text-decoration: underline;
