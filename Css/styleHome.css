@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 header {
     background-color: transparent;
     border-bottom: transparent;
@@ -189,6 +190,8 @@ aside {
     text-align: center;
     flex: 1;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 .contact-info h2,
@@ -278,8 +281,9 @@ nav ul a {
 .portfolio-item {
     position: relative;
     flex: 1;
-    margin-right: 5px;
-    border: solid black 1px;
+    margin-right: 0px;
+    border-left: solid black 5px;
+    border-right: solid black 5px;
 }
 
 .about-text {
