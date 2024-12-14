@@ -193,4 +193,9 @@ nav ul li {
   }
   
   
+  @media screen and (max-width: 768px) {
+      nav ul strong {
+          display: none;
+      }
+}
   

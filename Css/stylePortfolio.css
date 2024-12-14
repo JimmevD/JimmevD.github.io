@@ -123,3 +123,19 @@ body{
 .close:hover {
     color: #11DC98;
 }
+
+
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        flex: 0 0 100%; /* Make each item take 100% width */
+        margin-top: 20px; /* Add some vertical spacing between items */
+    }
+
+    .portfolio-item img {
+        height: auto; /* Adjust height for a more natural aspect ratio */
+    }
+
+    .portfolio-item:nth-child(2) {
+        margin-top: 10px;
+    }
+}
