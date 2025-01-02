@@ -1,7 +1,8 @@
-// contact.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
+    
+    // Reset the form fields when the page loads
+    form.reset();
 
     form.addEventListener("submit", (event) => {
         // Get form fields

@@ -315,6 +315,7 @@ aside .about-image img {
     position: relative;
     border-radius: 50%;
     margin-right: 20px;
+    object-position: 50% 30%;
 }
 
 .overlay h3,

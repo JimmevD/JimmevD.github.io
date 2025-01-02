@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/Css/styleContact.css">
     <script src="JS/animation.js"></script>
     <script src="JS/contact.js"></script>
-    <form action="send_mail.php" method="post">
 
 
 </head>
@@ -40,13 +39,23 @@
             
             <div class="contact-form">
                 <h2>Send a Message</h2>
-                <form action="#" method="post">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="52ca11e0-51ed-40d3-b5d5-8e3eb00ceaa7">
+            
+                    <!-- User Inputs -->
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
+            
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
                     <button type="submit">Send</button>
                 </form>
             </div>
+            
+
         </div>
     </div>
     
