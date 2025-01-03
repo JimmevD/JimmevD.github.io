@@ -127,6 +127,8 @@ a:hover{
     .contact-section-wrapper {
         flex-direction: column;
         align-items: flex-start; /* Align items to the left */
+        margin-top: 5vh;
+        margin-right: 5px;
     }
 
     .contact-section {
@@ -134,7 +136,6 @@ a:hover{
         gap: 0px;
         border-radius: 10px;
         max-width: 95%; /* Ensure it doesn't stretch to the edges */
-        margin: 0; /* Remove auto-centering */
         padding: 15px;
     }
 

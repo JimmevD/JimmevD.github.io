@@ -116,6 +116,7 @@ body {
   position: absolute;
   bottom: 15px;
   right: 15px;
+  border-radius: 30px;
 }
 
 .cv-button:hover {
@@ -133,10 +134,14 @@ body {
   .box:nth-child(1){
     display: none;
   }
-
+  
   .box:nth-child(2){
     flex: 1 1 100%;
     margin-top: 40px;
+  }
+
+  .box:nth-child(2) p{
+    padding-bottom: 30px;
   }
 
   .box:nth-child(3),
