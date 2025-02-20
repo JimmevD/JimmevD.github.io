@@ -1,4 +1,10 @@
 // Add event listener for window scroll event
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("a").forEach(link => {
+      link.href = link.href.replace(".html", "");
+    });
+  });
+
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
 
