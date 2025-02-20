@@ -2,10 +2,17 @@
 
 //Removes HTML Link
 document.addEventListener("DOMContentLoaded", function () {
+    // Fix all <a> tags
     document.querySelectorAll("a").forEach(link => {
       link.href = link.href.replace(".html", "");
     });
+
+    // Fix inline JavaScript onclick attributes
+    document.querySelectorAll("[onclick]").forEach(element => {
+      element.setAttribute("onclick", element.getAttribute("onclick").replace(".html", ""));
+    });
   });
+
 
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
