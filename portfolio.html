@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/stylePortfolio.css">
     <script src="JS/modal.js"></script>
+    <script src="JS/animation.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,29 @@
         <!-- Portfolio Grid Section -->
         <section id="portfolio">
             <h1>My Work</h1>
-            <div class="portfolio-grid">
+            <div class="portfolio-grid">              
+                <div class="portfolio-item" onclick="window.location.href='candice-wickle.html'">
+                    <img src="Images/Candice-Wickle/Thumbnail.png" 
+                         data-static="Images/Candice-Wickle/Thumbnail.png" 
+                         data-gif="Images/Candice-Wickle/Gif.gif" 
+                         alt="Candice Wickle">
+                    <div class="portfolio-info">
+                        <h3>Candice Wickle</h3>
+                        <p>2D Puzzle platformer game</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" onclick="window.location.href='level-design.html'">
+                    <img src="Images/level-design/Thumbnail.png" 
+                         data-static="Images/level-design/Thumbnail.png"
+                         data-gif="Images/level-design/Gif.gif"
+                         alt="level-design">
+                    <div class="portfolio-info">
+                        <h3>Level Design (Personal Learning)</h3>
+                        <p>First Person Puzzle Game</p>
+                    </div>
+                </div>
+                
                 <div class="portfolio-item" onclick="window.location.href='demonic-treasure.html'">
                     <img src="Images/Demonic Treasure.png" 
                          data-static="Images/Demonic Treasure.png" 
@@ -34,17 +57,6 @@
                     <div class="portfolio-info">
                         <h3>Demonic Treasure</h3>
                         <p>Side scroller platformer game</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" onclick="window.location.href='candice-wickle.html'">
-                    <img src="Images/CandiceWickle.png" 
-                         data-static="Images/CandiceWickle.png" 
-                         data-gif="Images/GameGifs/CandiceWickleGif.gif" 
-                         alt="Candice Wickle">
-                    <div class="portfolio-info">
-                        <h3>Candice Wickle</h3>
-                        <p>2D Puzzle platformer game</p>
                     </div>
                 </div>
 
@@ -56,17 +68,6 @@
                     <div class="portfolio-info">
                         <h3>Combat System (Personal Learning)</h3>
                         <p>First Person Combat</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" onclick="window.location.href='level-design.html'">
-                    <img src="Images/LevelDesign.png" 
-                         data-static="Images/LevelDesign.png"
-                         data-gif="Images/GameGifs/LevelDesignGif.gif" 
-                         alt="Combat-System">
-                    <div class="portfolio-info">
-                        <h3>Level Design (Personal Learning)</h3>
-                        <p>First Person Puzzle Game</p>
                     </div>
                 </div>
 
@@ -108,7 +109,9 @@
 
     <footer class="footer">
         <div class="social-icons">
-            <a href="mailto:&#x35;&#x35;&#x32;&#x37;&#x35;&#x37;&#x40;&#x73;&#x74;&#x75;&#x64;&#x65;&#x6e;&#x74;&#x2e;&#x73;&#x61;&#120;&#x69;&#x6f;&#x6e;&#x2e;&#x6e;&#x6c;"><img src="Images/Icons/Emailicon.png" alt="Email"></a>
+            <a id="emailF">
+                <img src="Images/Icons/Emailicon.png" alt="Email">
+            </a>
             <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank"><img src="Images/Icons/LinkedInIcon.png" alt="LinkedIn"></a>
             <a href="https://github.com/JimmevD" target="_blank"><img src="Images/Icons/GithhubIcon.svg" alt="GitHub"></a>
         </div>

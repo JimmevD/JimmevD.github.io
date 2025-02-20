@@ -52,10 +52,18 @@ document.addEventListener('scroll', function() {
 
 //prevents scraping hopefully
 document.addEventListener("DOMContentLoaded", () => {
-    const email = String.fromCharCode(53, 53, 50, 55, 53, 55); // Encoded as ASCII codes
-    const domain = String.fromCharCode(115, 116, 117, 100, 101, 110, 116, 46, 115, 97, 120, 105, 111, 110, 46, 110, 108);
+    const email = String.fromCharCode(74, 105, 109, 109, 101, 68); // Encoded as ASCII codes
+    const domain = String.fromCharCode(120, 115, 52, 97, 108, 108, 46, 110, 108);
     const emailElement = document.getElementById("email");
     emailElement.innerHTML = `<a href="mailto:${email}@${domain}">${email}@${domain}</a>`;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const email = String.fromCharCode(74, 105, 109, 109, 101, 68); // Decoded ASCII for "JimmeD"
+    const domain = String.fromCharCode(120, 115, 52, 97, 108, 108, 46, 110, 108); // "xs4all.nl"
+    const emailElement = document.getElementById("emailF");
+
+    emailElement.setAttribute("href", `mailto:${email}@${domain}`);
 });
 
 //Display diffrent image if gif isn't loaded

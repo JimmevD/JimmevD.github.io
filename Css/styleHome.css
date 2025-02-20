@@ -142,6 +142,7 @@ aside {
     height: 300px;
     object-fit: cover;
     display: block;
+    border: solid white 1px;
 }
 
 .about-me-button-container {
@@ -325,8 +326,14 @@ aside .about-image img {
     text-align: center;
 }
 
+.portfolio-item:hover{
+    transform: scale(1.04);
+    z-index: 10;
+}
+
 .portfolio-item:hover .overlay {
     opacity: 1;
+    border: solid #11DC98 2px;
 }
 }
 
@@ -377,6 +384,7 @@ nav ul li {
   .overlay p {
       color: white;
       text-align: center;
+      font-size: 90%;
   }
   
 }
