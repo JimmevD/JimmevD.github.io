@@ -1,5 +1,7 @@
 // Add event listener for window scroll event
-  document.addEventListener("DOMContentLoaded", function () {
+
+//Removes HTML Link
+document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("a").forEach(link => {
       link.href = link.href.replace(".html", "");
     });
