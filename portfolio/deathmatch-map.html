@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Design - Jimme van Duijnhoven</title>
+    <link rel="stylesheet" href="../Css/styleBase.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="../Css/styleBasePortfolioItem.css"> <!-- Shared styles for portfolio items -->
+    <script src="../JS/animation.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="project-container">
+        <div class="project-content">
+            <h1 class="section-header">Deathmatch Map</h1>
+            
+            <div class="left-section">
+                <section class="project-video">
+                    <iframe src="https://www.youtube.com/embed/V_LlxXc1Mcg" title="Deathmatch Map" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <section class="project-details">
+                    <h2>About the Project</h2>
+                    <h3>Concept</h3>
+                    <p> This is a personal learning project about Level Design Layouts. I wanted to learn how to different level design layouts work and in the end 
+                        I've created a level design block-out for a 3v3 map in a game like [Overwatch].  
+                    </p>
+                    <h3>Details</h3>
+                    <p> <b>Engine:</b> Unreal Engine  </br>
+                        <b>Genre:</b> Hero Shooter</br>
+                        <b>Platform:</b> PC (Windows)
+                    </p>
+                    <a href="https://drive.google.com/file/d/1uIeQE16811mb_yHqXoojiehpBD006cvc/view?usp=sharing" target="_blank" class="download-button">Download the Game</a>
+                </section>
+            </div>
+
+            <div class="right-section">
+                <section class="project-contribution">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <h3>Learned</h3>
+                        <li>Analyzing level design layouts and seeing how other games apply them</li>
+                        <li>Working Level Design Layouts</li>
+                        <li>Fast protoyping with Unreal Engine's CubeGrid</li>
+                    </br>
+                    </br>
+                        <h3>Practiced Level Design Layouts</h3>
+                        <li>Linear</li>
+                        <li>Three-Lane</li>
+                        <li>Arena</li>
+                        <li>Ring</li>
+                        <li>Network</li>
+                    </br>
+                </section>
+            </div>
+
+            <div class="progress-section">
+                <section>
+                    <h2>Progress</h2>
+                        <p>Here is a look into the development progress of my layout for a Deathmatch map. I will show you how I designed the level.</p>
+                        <p>I researched what types of layouts are typically used for Deathmatch maps in competitive games and made my own based on that.</p>
+                        <p>I used <strong>Unreal Engine 5</strong> and its <strong>CubeGrid tool</strong> for fast iteration and prototyping.</p>
+                     
+
+                    <div class="progress-item">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/TopDownLayoutProgresion.png" alt="Topdown Sketch" class="progress-image">
+                        <div class="progress-text">
+                            <h3 class="progress-heading">Top Down Sketch</h3>
+                            <p class="progress-paragraph">Here you can see my sketches for the level. I usually work with top-down views because that gives me a clear overview of how everything is connected. In this case, you can see the progression from left to right.</p>
+                        </br>
+                            <p class="progress-paragraph">The left one was my original idea. As you can see, the level layout is symmetrical. 
+                                This is usually done with a symmetrical arena layout to avoid giving anyone an unfair advantage. 
+                                The second screenshot is already a bit more refined with more details. 
+                                This is the general layout I wanted to use. However, when I went over the whole layout again, there were some parts that needed improvement. 
+                                As you can see, the building in the middle has an extended bit on the left. 
+                                This was because you would otherwise have a direct line to the enemy spawn, and you don’t want spawn camping. 
+                                I also made the house on the left a bit more interesting by adding a health pack and a balcony that looks over the map. 
+                                This balcony has almost no cover, so it doesn’t give a huge advantage.</p>
+                        </div>
+                    </div>
+            
+                    <div class="progress-item reverse">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/block-out-progression.gif" alt="block-out-progression-gif" class="progress-image">
+                        <div class="progress-text">
+                            <h3 class="progress-heading">Block-out progress-section</h3>
+                            <p class="progress-paragraph">Like I mentioned already, I made the level block-out with Unreal Engine's CubeGrid tool. 
+                                This tool allows you to quickly generate cubes and modify them wherever you want. 
+                                I used this in combination with my top-down layout so I knew exactly where to place my blocks.</p>
+                        </div>
+                    </div>
+            
+                    <div class="progress-item">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/ChangedBuilding.png" alt="Main ChangedBuilding" class="progress-image">
+                        <div class="progress-text">
+                            <h3 class="progress-heading">Most Changed Building</h3>
+                            <p class="progress-paragraph">One of the biggest changes was to the main building near spawn. 
+                                I added a staircase that leads up to the roof, along with a small building on top that has a hole in the floor, allowing you to drop down inside. 
+                                This makes the high ground more accessible to every character and gives players more options at the start of the match, especially since this is the first building visible when you leave spawn.</p>
+                        </div>
+                    </div>
+            
+                    <div class="progress-item reverse">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/BalconyChange.png" alt="More Changes" class="progress-image">
+                        <div class="progress-text">
+                            <h3 class="progress-heading">More Changes</h3>
+                            <p class="progress-paragraph">When you are working on a block-out, you notice that some things don’t work properly or could be better, this case was no exception. 
+                                When I kept trying to go on the balcony, I had to walk through the whole house to take the stairs, since the spawn position was on the other side.</p>
+                        </br>
+                            <p class="progress-paragraph">This is why I made the stairs the first thing next to the door, to make them easier to reach directly from spawn. 
+                                This change gives players a better chance of reaching the central high ground quickly, even if their character doesn’t have any mobility abilities like flying or teleporting. Because the stairs were moved, the balcony had to shift as well. 
+                                It’s now on the opposite side, overlooking the statue in the middle. 
+                                While the high ground offers an advantage, the balcony is a narrow area with no cover, so it doesn’t give too much of an edge.</p>
+                        </div>
+                    </div>
+            
+                    <div class="progress-item">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Stairs.png" alt="Stair Change" class="progress-image">
+                        <div class="progress-text">
+                            <h3 class="progress-heading">Cover</h3>
+                            <p class="progress-paragraph">One of the most important things is to give the player cover so they can hide behind something. 
+                                On one side of the map, there are buildings you can hide behind as you leave spawn. 
+                                But the other side didn’t have any natural cover, so I added a large staircase leading up to the central high ground. The stairs are taller than the player, making it impossible to get shot from the other side while going up. 
+                                Once you reach the top, there’s a safe zone surrounded by walls. 
+                                From there, you can walk across a bridge to the high ground, but the bridge doesn’t have much cover, so it still requires caution when crossing it.</p>
+                        </br>
+                        </div>
+                    </div>
+
+                    <div class="image-collage">
+                        <h3> Screenshots of Layout </h3>
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture1.png" alt="ProgressPicture1" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture2.png" alt="ProgressPicture2" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture3.png" alt="ProgressPicture3" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture4.png" alt="ProgressPicture4" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture5.png" alt="ProgressPicture5" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture6.png" alt="ProgressPicture6" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture7.png" alt="ProgressPicture7" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture8.png" alt="ProgressPicture8" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture9.png" alt="ProgressPicture9" class="progress-image">
+                        <img src="../Images/Deathmatch-Map/ProgressPictures/Picture10.png" alt="ProgressPicture10" class="progress-image">
+                    </div>
+                </section>
+            </div>
+                </section>
+            </div>            
+        </div>
+    </main>
+
+    <a href="../portfolio.html" class="back-button">⟵</a>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a id="emailF">
+                <img src="../Images/Icons/Emailicon.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank"><img src="../Images/Icons/LinkedInIcon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/JimmevD" target="_blank"><img src="../Images/Icons/GithhubIcon.svg" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <style>
+        .project-container {
+            background-image: url("../Images/Deathmatch-map/ProgressPictures/Picture4.png");
+        }
+    </style>
+</body>
+</html>
