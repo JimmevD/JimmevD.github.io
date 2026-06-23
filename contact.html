@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/styleContact.css">
     <script src="JS/jquery-4.0.0.min.js"></script>
+    <script src="JS/shared-layout.js"></script>
     <script src="JS/html-extension-remover.js"></script>
     <script src="JS/email-links.js"></script>
     <script src="JS/contact-form.js"></script>
@@ -14,17 +15,7 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html"><b>Contact</b></a></li>
-                <a><strong>Jimme van Duijnhoven</strong></a>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="header" data-active-page="contact"></div>
 
     <div class="contact-section-wrapper">
         <div class="contact-section">
@@ -60,18 +51,6 @@
         </div>
     </div>
     
-    <footer class="footer">
-        <div class="social-icons">
-            <a id="emailF">
-                <img src="Images/Icons/Emailicon.png" alt="Email">
-            </a>
-            <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank">
-                <img src="Images/Icons/LinkedInIcon.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/JimmevD" target="_blank">
-                <img src="Images/Icons/GithhubIcon.svg" alt="GitHub">
-            </a>
-        </div>
-    </footer>
+    <div data-include="footer"></div>
 </body>
 </html>

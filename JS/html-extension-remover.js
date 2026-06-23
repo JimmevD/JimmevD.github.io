@@ -1,4 +1,4 @@
-$(function () {
+function removeHtmlExtensions() {
     // On the live website, links look cleaner without the ".html" extension.
     // Local development keeps ".html" so Python's simple local server still works.
     function isLocalWebsite() {
@@ -49,4 +49,9 @@ $(function () {
 
         $element.attr("onclick", removeHtmlExtension(onclick));
     });
+}
+
+$(function () {
+    removeHtmlExtensions();
+    $(document).on("shared-layout-loaded", removeHtmlExtensions);
 });

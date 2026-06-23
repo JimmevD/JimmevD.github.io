@@ -59,13 +59,13 @@ nav ul a strong{
 
 nav ul li b {
     color: #11DC98;
+    font-weight: 700;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     color: #11DC98;
     text-decoration: underline;
-    font-weight: bold;    
     cursor: pointer;
 }
 

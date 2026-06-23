@@ -7,23 +7,14 @@
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/styleHome.css">
     <script src="JS/jquery-4.0.0.min.js"></script>
+    <script src="JS/shared-layout.js"></script>
     <script src="JS/html-extension-remover.js"></script>
     <script src="JS/layout-scroll.js"></script>
     <script src="JS/email-links.js"></script>
     <script src="JS/intro-gif-loader.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./"><b>Home</b></a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <a><strong>Jimme van Duijnhoven</strong></a>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="header" data-active-page="home"></div>
 
     <div class="Home">
         <div class="Home-text">
@@ -109,18 +100,6 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a id="emailF">
-                <img src="Images/Icons/Emailicon.png" alt="Email">
-            </a>
-            <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank">
-                <img src="Images/Icons/LinkedInIcon.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/JimmevD" target="_blank">
-                <img src="Images/Icons/GithhubIcon.svg" alt="GitHub">
-            </a>
-        </div>
-    </footer>
+    <div data-include="footer"></div>
 </body>
 </html>

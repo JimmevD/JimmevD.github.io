@@ -12,10 +12,12 @@ $(function () {
         var $name = $form.find('input[name="name"]');
         var $email = $form.find('input[name="email"]');
         var $message = $form.find('textarea[name="message"]');
+        var $submitButton = $form.find('button[type="submit"]');
         var $fields = $name.add($email).add($message);
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var isValid = true;
 
+        event.preventDefault();
         $fields.css("border-color", "#ccc");
 
         if ($name.val().trim() === "") {
@@ -34,8 +36,31 @@ $(function () {
         }
 
         if (!isValid) {
-            event.preventDefault();
             alert("Please fill in all fields correctly.");
+            return;
         }
+
+        $submitButton.prop("disabled", true).text("Sending...");
+
+        $.ajax({
+            url: $form.attr("action"),
+            method: $form.attr("method"),
+            data: new FormData($form[0]),
+            dataType: "json",
+            processData: false,
+            contentType: false
+        }).done(function (response) {
+            if (response && response.success === false) {
+                alert(response.message || "Something went wrong. Please try again.");
+                return;
+            }
+
+            $form[0].reset();
+            alert("Thank you! Your message has been sent.");
+        }).fail(function () {
+            alert("Something went wrong. Please try again.");
+        }).always(function () {
+            $submitButton.prop("disabled", false).text("Send");
+        });
     });
 });

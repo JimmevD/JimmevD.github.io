@@ -7,22 +7,13 @@
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/stylePortfolio.css">
     <script src="JS/jquery-4.0.0.min.js"></script>
+    <script src="JS/shared-layout.js"></script>
     <script src="JS/html-extension-remover.js"></script>
     <script src="JS/email-links.js"></script>
     <script src="JS/portfolioitem-preview.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="portfolio.html"><b>Portfolio</b></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <a><strong>Jimme van Duijnhoven</strong></a>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="header" data-active-page="portfolio"></div>
 
     <div class="container">
         <!-- Portfolio Grid Section -->
@@ -131,14 +122,6 @@
         </section>
     </div>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a id="emailF">
-                <img src="Images/Icons/Emailicon.png" alt="Email">
-            </a>
-            <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank"><img src="Images/Icons/LinkedInIcon.png" alt="LinkedIn"></a>
-            <a href="https://github.com/JimmevD" target="_blank"><img src="Images/Icons/GithhubIcon.svg" alt="GitHub"></a>
-        </div>
-    </footer>
+    <div data-include="footer"></div>
 </body>
 </html>
