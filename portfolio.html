@@ -6,8 +6,10 @@
     <title>Portfolio - Jimme van Duijnhoven</title>
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/stylePortfolio.css">
-    <script src="JS/modal.js"></script>
-    <script src="JS/animation.js"></script>
+    <script src="JS/jquery-4.0.0.min.js"></script>
+    <script src="JS/html-extension-remover.js"></script>
+    <script src="JS/email-links.js"></script>
+    <script src="JS/portfolioitem-preview.js"></script>
 </head>
 <body>
     <header>
@@ -138,16 +140,5 @@
             <a href="https://github.com/JimmevD" target="_blank"><img src="Images/Icons/GithhubIcon.svg" alt="GitHub"></a>
         </div>
     </footer>
-
-    <script>
-        document.querySelectorAll('.portfolio-item img').forEach(item => {
-            item.addEventListener('mouseover', function() {
-                this.src = this.getAttribute('data-gif');
-            });
-            item.addEventListener('mouseout', function() {
-                this.src = this.getAttribute('data-static');
-            });
-        });
-    </script>
 </body>
 </html>

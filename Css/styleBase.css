@@ -75,24 +75,6 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.footer-button {
-    text-align: center;
-}
-
-.back-to-top-button {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border: 2px solid rgb(255, 255, 255);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.back-to-top-button:hover{
-    color: #11DC98;
-    border: solid 2px #11DC98;
-}
-
 .social-icons {
     display: flex;
     justify-content: center;
