@@ -1,52 +1,54 @@
-/* styleContact.css */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+body,
+html {
     background-color: #1e1c29;
     background-image: url("/Images/Candice-Wickle/Thumbnail.png");
+    background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
-.contact-section-wrapper {
+body {
     display: flex;
+    flex-direction: column;
+}
+
+.contact-section-wrapper {
     align-items: center;
+    display: flex;
+    flex: 1;
     justify-content: center;
-    min-height: 87.4vh;
-    padding: 20px; /* Ensure some padding for better spacing */
+    padding: 110px 24px 40px;
+    width: 100%;
 }
 
 .contact-section {
-    display: flex;
     align-items: flex-start;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 20px;
-    background-color: #000000c8; /* Semi-transparent black background */
+    background-color: rgba(33, 33, 33, 1);
+    border: solid white 2px;
     border-radius: 20px;
     color: white;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    padding: 30px;
+    width: min(100%, 1500px);
 }
 
 .contact-container {
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 35px 12px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.contact-container h2 {
-    font-size: 24px;
+.contact-container h2,
+.contact-form h2 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .contact-container p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
 
@@ -55,125 +57,102 @@ body, html {
 }
 
 .contact-info p {
-    margin-bottom: 15px;
-    display: flex;
     align-items: center;
+    display: flex;
+    margin-bottom: 19px;
 }
 
 .contact-item img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
+    height: 25px;
+    margin-right: 12px;
+    width: 25px;
 }
 
 a {
-    color: white; 
+    color: white;
 }
 
-a:hover{
-    color: #11DC98; 
+a:hover {
+    color: #11DC98;
 }
 
 .contact-form {
-    flex: 1;
-    padding: 20px;
+    padding: 25px;
 }
 
-.contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
-    font-size: 16px;
-    margin-bottom: 8px;
-    width: 100%;
-    padding: 8px;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: white;
     color: black;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
 }
 
 .contact-form textarea {
+    min-height: 188px;
     resize: vertical;
-    min-height: 150px;
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #212121;
     border: 2px solid white;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px 25px;
 }
 
 .contact-form button:hover {
+    border-color: #11DC98;
     color: #11DC98;
-    border: solid 2px #11DC98;
 }
 
-
-/* Add this media query to your existing CSS file */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
     .contact-section-wrapper {
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
-        margin-top: 5vh;
-        margin-right: 5px;
+        align-items: stretch;
+        padding: 82px 14px 24px;
     }
 
     .contact-section {
-        flex-direction: column;
-        gap: 0px;
-        border-radius: 10px;
-        max-width: 95%; /* Ensure it doesn't stretch to the edges */
-        padding: 15px;
-    }
-
-    .contact-container {
-        max-width: 100%; /* Ensure full width */
-        padding: 20px 10px;
-        margin-left: 0; /* Align container to the left */
-        text-align: left; /* Align text inside the container to the left */
-    }
-
-    .contact-container h2, 
-    .contact-container p, 
-    .contact-info, 
-    .contact-info p {
-        text-align: left; /* Ensure all content inside the container is left-aligned */
-    }
-
-    .contact-form {
+        border-radius: 12px;
+        display: block;
+        padding: 18px;
         width: 100%;
-        padding: 10px;
     }
 
-    .contact-form input[type="text"], 
-    .contact-form input[type="email"], 
+    .contact-container,
+    .contact-form {
+        padding: 10px 0;
+    }
+
+    .contact-container h2,
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .contact-container p {
+        font-size: 16px;
+    }
+
+    .contact-container,
+    .contact-info,
+    .contact-info p {
+        text-align: left;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
     .contact-form textarea {
         font-size: 14px;
-        padding: 6px;
-        max-width: 95%;
     }
 
-    .contact-form button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
+    .contact-form button,
     a {
         font-size: 14px;
     }
 }
-
-

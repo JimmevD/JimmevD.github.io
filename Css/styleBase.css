@@ -1,12 +1,9 @@
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap");
 
-p, a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 * {
@@ -14,24 +11,46 @@ p, a {
     padding: 0;
 }
 
-button{
-    border-radius: 30px;
-    border: 2px solid black;
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
 
-button:hover{
-    border:#11DC98;
+a {
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+button {
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
     color: #11DC98;
-    font-weight: bolder;
-    font-size: 15px;
+    transform: scale(1.04);
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: #212121;
     border-bottom: 2px solid #11DC98;
-    padding: 20px;
+    padding: 18px 24px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
 }
@@ -39,22 +58,14 @@ header {
 nav ul {
     display: flex;
     align-items: center;
+    gap: clamp(28px, 4vw, 56px);
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-nav ul a strong{
-    color: white
+    white-space: nowrap;
 }
 
 nav ul li b {
@@ -66,11 +77,22 @@ nav ul li b {
 nav ul li a:hover {
     color: #11DC98;
     text-decoration: underline;
-    cursor: pointer;
+}
+
+nav ul a strong {
+    color: white;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+nav ul > a {
+    margin-left: auto;
+    text-decoration: none;
 }
 
 .footer {
-    background-color: black;
+    background-color: #212121;
+    border-top: 2px solid #11DC98;
     color: white;
     padding: 20px;
 }
@@ -78,11 +100,11 @@ nav ul li a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 20px;
 }
 
 .social-icons a {
-    margin-right: 20px;
+    display: inline-flex;
 }
 
 .social-icons img {
@@ -90,94 +112,21 @@ nav ul li a:hover {
     height: auto;
 }
 
-.footer{
-    border-top: 2px solid #11DC98;
-}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 14px 12px;
+    }
 
-/* Style big */
-nav ul li {
-    margin-right: 20px;
-}
+    nav ul {
+        justify-content: center;
+        gap: clamp(14px, 4vw, 22px);
+    }
 
-nav ul a {
-    color: white;
-    margin-left: auto;
-    margin-right: 35px;   
-}
+    nav ul li a {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
 
-.Home-text p{
-    bottom: 47%;
+    nav ul > a {
+        display: none;
+    }
 }
-
-
-.about-text p {
-    width: 50%;
-}
-
-.portfolio-container {
-    display: flex;
-    justify-content: space;
-}
-
-.portfolio-item {
-    position: relative;
-    flex: 1;
-    margin-right: 5px;
-    border: solid black 1px;
-}
-
-/* Style Small */
-nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul a {
-    color: transparent;
-    margin-left: auto;
-    margin-right: 35px;   
-  }
-    
-  .Home-text p{
-    bottom: 43%;
-  }
-  
-  .about-text p {
-    width: 100%;
-    margin-left: 0px;
-  }
-  
-  aside .about-image img {
-    position: absolute;
-    width: 0px;
-    height: 0px;
-  }
-  
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-  }
-  
-  .portfolio-item {
-    width: 100%;
-  }
-  
-  .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-    position:relative;
-    top: -42px;
-    margin-bottom: -42px;
-  }
-  
-  .overlay h3,
-  .overlay p {
-      color: white;
-      text-align: center;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-      nav ul strong {
-          display: none;
-      }
-}
-  
