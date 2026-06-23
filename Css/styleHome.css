@@ -11,9 +11,18 @@ header.scrolled {
     border-bottom-color: #11DC98;
 }
 
+body.home-page {
+    background-color: #212121;
+    background-image: url("/Images/IntroGif.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 .Home {
     align-items: center;
-    background-image: url("/Images/IntroGif.gif");
+    background-attachment: fixed;
+    background-image: inherit;
     background-position: center;
     background-size: cover;
     color: white;
@@ -86,9 +95,7 @@ header.scrolled {
 }
 
 .sectionWhite {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-color: rgba(33, 33, 33, 0.28);
     color: #ffffff;
     position: relative;
     z-index: 1;
@@ -281,6 +288,11 @@ aside .about-image img {
         background-position: 58% center;
     }
 
+    body.home-page {
+        background-attachment: scroll;
+        background-position: 58% center;
+    }
+
     .Home::before {
         filter: blur(2px);
     }
@@ -307,10 +319,6 @@ aside .about-image img {
     .hero-scroll {
         bottom: 64px;
         font-size: 3.4rem;
-    }
-
-    .sectionWhite {
-        background-attachment: scroll;
     }
 
     .sectionBlack {
@@ -346,15 +354,36 @@ aside .about-image img {
     }
 
     .overlay {
+        background-color: rgba(33, 33, 33, 0.75);
+        border-top: solid rgba(33, 33, 33, 1) 1px;
+        color: white;
+        height: auto;
         inset: auto 0 0 0;
-        min-height: 72px;
+        min-height: 0;
+        opacity: 1;
+        padding: 10px;
+        pointer-events: none;
         position: absolute;
+        top: auto;
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        width: auto;
     }
 
     .overlay h3,
     .overlay p {
         font-size: 90%;
-        padding: 2px 8px;
+        padding: 0;
+    }
+
+    .portfolio-item:hover {
+        transform: none;
+    }
+
+    .portfolio-item:hover .overlay {
+        background-color: rgba(33, 33, 33, 0.75);
+        border: 0;
+        border-top: solid rgba(33, 33, 33, 1) 1px;
+        border-radius: 0;
     }
 
     .contact-button {

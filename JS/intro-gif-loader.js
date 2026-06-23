@@ -1,15 +1,16 @@
 $(function () {
     // Shows a placeholder until the animated home background has finished loading.
+    var $homePage = $("body.home-page");
     var $homeSection = $(".Home");
 
-    if (!$homeSection.length) {
+    if (!$homeSection.length || !$homePage.length) {
         return;
     }
 
     var introGifPath = "/Images/IntroGif.gif";
 
-    $homeSection.css("background-image", "url('/Images/BlackScreen.png')");
+    $homePage.add($homeSection).css("background-image", "url('/Images/BlackScreen.png')");
     $("<img>").on("load", function () {
-        $homeSection.css("background-image", "url('" + introGifPath + "')");
+        $homePage.add($homeSection).css("background-image", "url('" + introGifPath + "')");
     }).attr("src", introGifPath);
 });
