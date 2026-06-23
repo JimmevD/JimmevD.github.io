@@ -14,146 +14,134 @@
 <body>
     <div data-include="header" data-active-page="about"></div>
 
-    <div class="container">
-        <div class="left-side">
-            <div class="box">
+    <main class="about-page">
+        <section class="about-hero" aria-labelledby="about-title">
+            <div class="about-panel about-hero-panel">
+                <article class="about-intro">
+                    <h1 id="about-title">About Me</h1>
+                    <p>Hi, I'm Jimme van Duijnhoven, a game design student at Saxion University in Enschede. I have a strong interest in gaming, designing, and creating games, which is why I chose this career path. I have over five years of experience with Unity and C#, and I also work with Unreal Engine Blueprints. I enjoy system design, level design, collaboration, and making games that feel engaging and enjoyable to play.</p>
+                </article>
+
+                <figure class="about-photo">
+                    <img src="/Images/JimmePhoto.jpg" alt="Jimme van Duijnhoven">
+                </figure>
             </div>
-            <div class="box">
-                <h2>About Me</h2>
-                <p>Hi, I’m Jimme van Duijnhoven, a passionate game design student currently studying at Saxion University in Enschede. I have a strong interest in gaming, designing, and creating games, which is why I chose this career path.
-                </br><br/>     
-                I have over five years of experience working with Unity and C#, and I’m skilled in using Unreal Engine with Blueprints. I love designing games, especially system design and level design. I enjoy collaborating with others and 
-                have experience working in teams to achieve common goals, share ideas, and ensure smooth communication throughout development projects. My goal is to become a professional game designer who creates engaging, visually appealing, 
-                and, most of all, enjoyable experiences.
-                </br><br/>              
-                In my free time, I love working on personal game projects and exploring new tools and techniques to improve both my technical and design skills.
-                </p>
-            </div>
-            <div class="box">
-                <h2>Work Experience</h2>
-                <p>
-                    <strong>Apollo Journey</strong>
-                    <br/>
-                    I completed a six-month internship here where I gained valuable industry experience and learned a lot.
-                    During this internship, I worked on a project involving Oculus VR within Unity.
-                    <br><br/>   
-                    <strong>Dutch Rose Media</strong>
-                    <br/>
-                    During my six-month internship here, I gained extensive experience and learned a great deal about the industry.
-                    I worked on various projects involving AR and VR, all developed in Unity.</p>
-            </div>
-            <div class="box">
+        </section>
+
+        <section class="about-details" aria-label="Education and work experience">
+            <article class="about-panel education-panel">
                 <h2>Education</h2>
-                <p>
-                    <strong>Saxion HBO</strong>  
-                    <br/>
-                    <small> 2023 - current </small>
-                    <br/>
-                    Here, I am acquiring the skills to become a professional game designer and preparing to work in a professional environment.
-                    <br><br/>   
-                <strong>SintLucas MBO</strong>  
-                </br>
-                    <small>2019 - 2023</small>
-                <br/> 
-                During my time here, I learned how to create games using Unity and C#. This involved setting up projects, collaborating with artists, and producing final, enjoyable games.
-                    <br><br/>   
-                    <strong>SintLucas VMBO-T</strong>  
-                    <br/>
-                    <small> 2015 - 2019 </small>
-                </br>
-                Here, I developed my creative thinking skills and learned effective idea generation methods. Additionally, I gained proficiency in using Adobe software such as Photoshop, InDesign, and Illustrator.</p>
-            </div>
-        </div>
-        <div class="right-box">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>
-                    <img src="/Images/skillIcons/unity.png" alt="Unity icon" class="skill-icon">
-                    <div class="skill-details">
+                <div class="timeline-list">
+                    <section class="timeline-item">
+                        <h3>Saxion HBO</h3>
+                        <span class="timeline-date">2023 - current</span>
+                        <p>Here, I am acquiring the skills to become a professional game designer and preparing to work in a professional environment.</p>
+                    </section>
+                    <section class="timeline-item">
+                        <h3>SintLucas MBO</h3>
+                        <span class="timeline-date">2019 - 2023</span>
+                        <p>During my time here, I learned how to create games using Unity and C#. This involved setting up projects, collaborating with artists, and producing final, enjoyable games.</p>
+                    </section>
+                    <section class="timeline-item">
+                        <h3>SintLucas VMBO-T</h3>
+                        <span class="timeline-date">2015 - 2019</span>
+                        <p>Here, I developed my creative thinking skills and learned effective idea generation methods. Additionally, I gained proficiency in using Adobe software such as Photoshop, InDesign, and Illustrator.</p>
+                    </section>
+                </div>
+            </article>
+
+            <article class="about-panel work-panel">
+                <h2>Work Experience</h2>
+                <div class="work-list">
+                    <section class="work-item">
+                        <h3>Apollo Journey</h3>
+                        <p>Completed a six-month internship where I worked on an Oculus VR project in Unity and gained valuable industry experience.</p>
+                    </section>
+                    <section class="work-item">
+                        <h3>Dutch Rose Media</h3>
+                        <p>Completed a six-month internship working on AR and VR projects in Unity, learning more about production, collaboration, and client-facing development.</p>
+                    </section>
+                </div>
+            </article>
+        </section>
+
+        <section class="about-panel skills-section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <img src="/Images/skillIcons/unity.png" alt="" class="skill-icon">
+                    <div>
                         <h3>Unity (C#)</h3>
                         <p>I have been using Unity for over 5 years and have created several games.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/UnrealEngine.png" alt="Unreal Engine icon" class="skill-icon">
-                    <div class="skill-details">
+                </article>
+                <article class="skill-card">
+                    <img src="/Images/skillIcons/UnrealEngine.png" alt="" class="skill-icon">
+                    <div>
                         <h3>Unreal Engine (Blueprints)</h3>
                         <p>I have been learning Unreal Engine for the past 2 years and can create games using Blueprints.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/AdobeCreativeCloud.png" alt="Adobe Creative Cloud icon" class="skill-icon">
-                    <div class="skill-details">
-                        <h3>Adobe Creative Suites</h3>
-                        <p>I can work with most of the Adobe creative Suite apps, Including: Photoshop, InDesign, Illustrator, Premiere Pro.</p>
+                </article>
+                <article class="skill-card">
+                    <img src="/Images/skillIcons/AdobeCreativeCloud.png" alt="" class="skill-icon">
+                    <div>
+                        <h3>Adobe Creative Suite</h3>
+                        <p>I can work with most of the Adobe Creative Suite apps, including Photoshop, InDesign, Illustrator, and Premiere Pro.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/blender.png" alt="Blender icon" class="skill-icon">
-                    <div class="skill-details">
+                </article>
+                <article class="skill-card">
+                    <img src="/Images/skillIcons/blender.png" alt="" class="skill-icon">
+                    <div>
                         <h3>Blender</h3>
                         <p>I have created some low-poly models for my games and am currently learning high-poly modeling.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/maya.png" alt="Maya icon" class="skill-icon">
-                    <div class="skill-details">
-                        <h3>Maya</h3>
-                        <p>I have created more complex models in Maya. I know how to UV wrap and texture the models.</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/figma.png" alt="Figma icon" class="skill-icon">
-                    <div class="skill-details">
+                </article>
+                <article class="skill-card">
+                    <img src="/Images/skillIcons/figma.png" alt="" class="skill-icon">
+                    <div>
                         <h3>Figma</h3>
                         <p>I have created several prototypes for UI and interactions using Figma.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/Icons/GithhubIcon.svg" alt="Github icon" class="skill-icon">
-                    <div class="skill-details">
-                        <h3>Github</h3>
-                        <p>I have been using GitHub for multiple years, I now how to set-up, back-up and merge files.</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-marker">SD</span>
+                    <div>
+                        <h3>System Design</h3>
+                        <p>I have designed systems for almost all the games I've made, focusing mainly on mechanics and their interactions with other objects.</p>
                     </div>
-                </li>
-                <li>
-                    <img src="/Images/skillIcons/Excel.png" alt="Excel icon" class="skill-icon">
-                    <div class="skill-details">
-                        <h3>Excel</h3>
-                        <p>I have been using Excel to create and manage documents for game development, including spreadsheets for game data, project tracking, and asset management.</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-marker">LD</span>
+                    <div>
+                        <h3>Level Design</h3>
+                        <p>I have created many levels, primarily for puzzle games. The levels have been extensively tested with players.</p>
                     </div>
-                </li>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-marker">PT</span>
+                    <div>
+                        <h3>Prototyping</h3>
+                        <p>I have prototyped extensively with users to achieve the best results possible. I have learned what questions to ask and how to implement feedback.</p>
+                    </div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-marker">CD</span>
+                    <div>
+                        <h3>Combat Design</h3>
+                        <p>I have been learning combat design recently and am also creating a prototype for a simple combat system.</p>
+                    </div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-marker">TW</span>
+                    <div>
+                        <h3>Teamwork</h3>
+                        <p>I have worked in teams on various projects, collaborating effectively with members to achieve common goals, share ideas, and ensure smooth communication throughout development to meet deadlines.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-                <div class="skill-details">
-                    <h3>System Design</h3>
-                    <p>I have designed systems for almost all the games I've made, focusing mainly on mechanics and their interactions with other objects.</p>
-                    <br/>
-                </div>
-                <div class="skill-details">
-                    <h3>Combat Design</h3>
-                    <p>I have been learning combat design recently and am also creating a prototype for a simple combat system.</p>
-                    <br/>
-                </div>
-                <div class="skill-details">
-                    <h3>Level Design</h3>
-                    <p>I have created many levels, primarily for puzzle games. The levels have been extensively tested with players.</p>
-                    <br/>
-                </div>
-                <div class="skill-details">
-                    <h3>Prototyping</h3>
-                    <p>I have prototyped extensively with users to achieve the best results possible. I have learned what questions to ask and how to implement feedback.</p>
-                    <br/>
-                </div>
-                <div class="skill-details">
-                    <h3>Teamwork</h3>
-                    <p>I have worked in teams on various projects, collaborating effectively with members to achieve common goals, share ideas, and ensure smooth communication throughout development to meet deadlines.</p>
-                    <br/>
-                </div>
-                
-            </ul>
-        </div>
-    </div>
-    
     <div data-include="footer"></div>
 </body>
 </html>
