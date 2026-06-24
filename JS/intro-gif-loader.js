@@ -7,9 +7,10 @@ $(function () {
         return;
     }
 
-    var introGifPath = "/Images/IntroGif.gif";
+    var introPosterPath = "/Content/Intro/IntroPoster.webp";
+    var introGifPath = "/Content/Intro/IntroGif.webp";
 
-    $homePage.add($homeSection).css("background-image", "url('/Images/BlackScreen.png')");
+    $homePage.add($homeSection).css("background-image", "url('" + introPosterPath + "')");
     $("<img>").on("load", function () {
         $homePage.add($homeSection).css("background-image", "url('" + introGifPath + "')");
     }).attr("src", introGifPath);

@@ -36,6 +36,7 @@ button {
     border-radius: 30px;
     border: 2px solid black;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
     transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 

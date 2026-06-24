@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Design Portfolio - Jimme van Duijnhoven</title>
+    <link rel="preload" href="/Content/Intro/IntroPoster.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/Content/Intro/IntroGif.webp" as="image">
     <link rel="stylesheet" href="/Css/styleBase.css">
     <link rel="stylesheet" href="/Css/styleHome.css">
     <script src="JS/jquery-4.0.0.min.js"></script>
@@ -31,7 +33,7 @@
         <div class="portfolio-container">
             <div class="portfolio-item" onclick="window.location.href='portfolio/candice-wickle.html'">
                <figure>
-                <img src="Images/Candice-Wickle/Thumbnail.png" alt="Portfolio 1">
+                <img src="Content/PortfolioItems/Candice-Wickle/Thumbnail.webp" alt="Portfolio 1" loading="lazy" decoding="async">
                 <figcaption class="overlay">
                     <h3>Candice Wickle</h3>
                     <p>2D Puzzle platformer game</p>
@@ -40,7 +42,7 @@
             </div>
             <div class="portfolio-item" onclick="window.location.href='portfolio/level-design.html'">
                 <figure>
-                <img src="Images/level-design/Thumbnail.png" alt="Portfolio 2">
+                <img src="Content/PortfolioItems/Level-Design/Thumbnail.webp" alt="Portfolio 2" loading="lazy" decoding="async">
                 <figcaption class="overlay">
                     <h3>Level Design</h3>
                     <p>First person puzzle game</p>
@@ -49,7 +51,7 @@
             </div>
             <div class="portfolio-item" onclick="window.location.href='portfolio/quake-level.html'">
                 <figure>
-                <img src="Images/quake-level/Thumbnail.png" alt="Portfolio 3">
+                <img src="Content/PortfolioItems/Quake-Level/Thumbnail.webp" alt="Portfolio 3" loading="lazy" decoding="async">
                 <figcaption class="overlay">
                     <h3>Quake Level Design</h3>
                     <p>First Person Shooter</p>
@@ -58,7 +60,7 @@
             </div>
             <div class="portfolio-item" onclick="window.location.href='portfolio/demonic-treasure.html'">
                 <figure>
-                <img src="Images/Demonic Treasure.png" alt="Portfolio 4">
+                <img src="Content/PortfolioItems/Demonic-Treasure/Thumbnail.webp" alt="Portfolio 4" loading="lazy" decoding="async">
                 <figcaption class="overlay">
                     <h3>Demonic Treasure</h3>
                     <p>Side Scroller Platformer</p>
@@ -74,7 +76,7 @@
     <div id="about" class="sectionBlack">
         <aside>
             <div class="about-image">
-                <img src="Images/JimmePhoto.jpg" alt="Profile Photo">
+                <img src="Content/Profile/JimmePhoto.webp" alt="Profile Photo" loading="lazy" decoding="async">
             </div>
         </aside>
         <div class="about-text">
@@ -93,9 +95,9 @@
             <div class="contact-info">
                 <h2>Get in Touch</h2>
                 <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out to me.</p>
-                <p class="contact-item"><img src="Images/Icons/Emailicon.png" alt="Email Icon"><span id="email"></span></p>
-                <p class="contact-item"><img src="Images/Icons/LinkedInIcon.png" alt="LinkedIn Icon"> <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank">My profile</a></p>
-                <p class="contact-item"><img src="Images/Icons/GithhubIcon.svg" alt="GitHub Icon"> <a href="https://github.com/JimmevD" target="_blank">My profile</a></p>
+                <p class="contact-item"><img src="Content/Icons/Contact/Emailicon.webp" alt="Email Icon" loading="lazy" decoding="async"><span id="email"></span></p>
+                <p class="contact-item"><img src="Content/Icons/Contact/LinkedInIcon.webp" alt="LinkedIn Icon" loading="lazy" decoding="async"> <a href="https://www.linkedin.com/in/jimme-van-duijnhoven-63b93b21b/" target="_blank">My profile</a></p>
+                <p class="contact-item"><img src="Content/Icons/Contact/GithhubIcon.svg" alt="GitHub Icon" loading="lazy" decoding="async"> <a href="https://github.com/JimmevD" target="_blank">My profile</a></p>
             </div>
             <div class="contact-button">
                 <a href="contact.html"><button>Contact Me</button></a>
