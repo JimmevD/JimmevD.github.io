@@ -7,10 +7,9 @@ $(function () {
         return;
     }
 
-    var introPosterPath = "/Content/Intro/IntroPoster.webp";
     var introGifPath = "/Content/Intro/IntroGif.webp";
 
-    $homePage.add($homeSection).css("background-image", "url('" + introPosterPath + "')");
+    $homePage.add($homeSection).css("background-image", "none");
     $("<img>").on("load", function () {
         $homePage.add($homeSection).css("background-image", "url('" + introGifPath + "')");
     }).attr("src", introGifPath);

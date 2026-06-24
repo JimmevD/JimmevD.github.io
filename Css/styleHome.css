@@ -12,8 +12,8 @@ header.scrolled {
 }
 
 body.home-page {
-    background-color: #212121;
-    background-image: url("/Content/Intro/IntroPoster.webp");
+    background-color: #000000;
+    background-image: none;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
