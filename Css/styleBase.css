@@ -59,11 +59,13 @@ nav ul {
     display: flex;
     align-items: center;
     gap: clamp(28px, 4vw, 56px);
+    font-family: "Poppins", sans-serif;
     list-style-type: none;
 }
 
 nav ul li a {
     color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -81,6 +83,7 @@ nav ul li a:hover {
 
 nav ul a strong {
     color: white;
+    font-family: "Poppins", sans-serif;
     margin-left: auto;
     white-space: nowrap;
 }
