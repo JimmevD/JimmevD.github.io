@@ -68,7 +68,36 @@ body {
 }
 
 .project-contribution ul {
+    margin: 0;
     padding-left: 20px;
+}
+
+.project-contribution h3 {
+    margin: 24px 0 8px;
+}
+
+.project-contribution h3:first-child,
+.project-contribution h2 + h3,
+.project-contribution h2 + ul h3:first-child,
+.contribution-group:first-of-type h3 {
+    margin-top: 0;
+}
+
+.project-contribution li {
+    margin-bottom: 6px;
+}
+
+.project-contribution li:last-child {
+    margin-bottom: 0;
+}
+
+.contribution-list {
+    display: grid;
+    gap: 24px;
+}
+
+.contribution-group h3 {
+    margin: 0 0 8px;
 }
 
 .project-details p {

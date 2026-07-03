@@ -62,21 +62,28 @@
             <div class="right-section">
                 <section class="project-contribution">
                     <h2>My Contributions</h2>
-                    <ul>
-                        <h3>Learned</h3>
-                        <li>How to use new tools (Trenchbroom)</li>
-                        <li>How to make playable levels for Quake</li>
-                    </br>
-                        <h3>Learned Level Design Skills</h3>
-                        <li>Analyzing existing levels</li>
-                        <li>How to implement research to make my own level that fits the style of the game</li>
-                        <li>How to guide the player through a non-linear level</li>
-                        <li>How to create multiple routes and height variation in level design</li>
-                        <li>Placing enemies and resources strategically for pacing</li>
-                        <li>Designing secret areas and rewards for exploration</li>
-                        <li>Using lights to hightlight important areas and draw attention</li>
-                    </br>
-                    </ul>
+                    <div class="contribution-list">
+                        <section class="contribution-group">
+                            <h3>Learned</h3>
+                            <ul>
+                                <li>How to use new tools (Trenchbroom)</li>
+                                <li>How to make playable levels for Quake</li>
+                            </ul>
+                        </section>
+
+                        <section class="contribution-group">
+                            <h3>Learned Level Design Skills</h3>
+                            <ul>
+                                <li>Analyzing existing levels</li>
+                                <li>How to implement research to make my own level that fits the style of the game</li>
+                                <li>How to guide the player through a non-linear level</li>
+                                <li>How to create multiple routes and height variation in level design</li>
+                                <li>Placing enemies and resources strategically for pacing</li>
+                                <li>Designing secret areas and rewards for exploration</li>
+                                <li>Using lights to hightlight important areas and draw attention</li>
+                            </ul>
+                        </section>
+                    </div>
                 </section>
             </div>
 
@@ -113,8 +120,8 @@
             <img src="../Content/PortfolioItems/Quake-Level/ProgressPictures/MakingTheLevel.webp" alt="Making the level" class="progress-image" loading="lazy" decoding="async">
             <div class="progress-text">
                 <h3 class="progress-heading">Making the level</h3>
-                <p class="progress-paragraph">I then translated the sketches into TrenchBroom by blocking out the geometry and adding textures. At this stage, I placed enemies, weapons, and resources while testing how players could move through the environment. This phase was all about making the level functional and playable, even if the visuals weren’t final yet.</p>
-                <p>However, while making the level, some of the things I designed didn’t work out well in the editor. This led to some big changes in certain areas.</p>
+                <p class="progress-paragraph">I then translated the sketches into TrenchBroom by blocking out the geometry and adding textures. At this stage, I placed enemies, weapons, and resources while testing how players could move through the environment. This phase was all about making the level functional and playable, even if the visuals weren't final yet.</p>
+                <p>However, while making the level, some of the things I designed didn't work out well in the editor. This led to some big changes in certain areas.</p>
             </div>
         </div>
 
@@ -124,9 +131,9 @@
                 <h3 class="progress-heading">Big Changes</h3>
                 <p class="progress-paragraph"><strong>Change 1:</strong> I reworked the very first area of the map to make it less empty. I added a pillar with an arch and a wall extension on the left, giving the player more cover and naturally guiding them toward the door first.</p>
                 </br>
-                <p class="progress-paragraph"><strong>Change 2:</strong> The first big sewer fight was updated with more objects to fill the space and make it less empty. I redesigned the first secret so it’s harder to spot. Hiding the entrance in a hole in the wall turned out to be much more visible underwater than I initially thought. It’s now located in the corner of a stone. I also added walls under the main platform so the secret isn’t visible right away. The enemies here were changed from ogres to zombies (since ogres kept falling off), and I reduced the number of fish to avoid clutter.</p>
+                <p class="progress-paragraph"><strong>Change 2:</strong> The first big sewer fight was updated with more objects to fill the space and make it less empty. I redesigned the first secret so it's harder to spot. Hiding the entrance in a hole in the wall turned out to be much more visible underwater than I initially thought. It's now located in the corner of a stone. I also added walls under the main platform so the secret isn't visible right away. The enemies here were changed from ogres to zombies (since ogres kept falling off), and I reduced the number of fish to avoid clutter.</p>
                 </br>
-                <p class="progress-paragraph"><strong>Change 3:</strong> I switched the order of the sewer area and the final fight to improve pacing. This way, players get a calmer section before the last big encounter. The level now ends with a boss fight, which fits Quake’s style, followed by a small exploration area where the player escapes to the surface. This change also ties into the story and gives players some rest before finishing the level.</p>
+                <p class="progress-paragraph"><strong>Change 3:</strong> I switched the order of the sewer area and the final fight to improve pacing. This way, players get a calmer section before the last big encounter. The level now ends with a boss fight, which fits Quake's style, followed by a small exploration area where the player escapes to the surface. This change also ties into the story and gives players some rest before finishing the level.</p>
             </div>
         </div>
 
@@ -153,18 +160,18 @@
             <img src="../Content/PortfolioItems/Quake-Level/ProgressPictures/Iteration2.webp" alt="Testing iteration 2" class="progress-image" loading="lazy" decoding="async">
             <div class="progress-text">
                 <h3 class="progress-heading">Testing iteration 2</h3>
-                <p class="progress-paragraph">After the second test, it was clear that my changes made the map better, but I still had some problems. The biggest issue was that the map didn’t use enough height variety and multiple routes, so it didn’t feel like a classic Quake map. I had been procrastinating on this change because I knew it would cost a lot of time. With the current feedback, I definitely needed to do it in order to make the level complete. In hindsight, I’m happy I did this as it made the level way better. Here was the most important feedback from this round:</p>
+                <p class="progress-paragraph">After the second test, it was clear that my changes made the map better, but I still had some problems. The biggest issue was that the map didn't use enough height variety and multiple routes, so it didn't feel like a classic Quake map. I had been procrastinating on this change because I knew it would cost a lot of time. With the current feedback, I definitely needed to do it in order to make the level complete. In hindsight, I'm happy I did this as it made the level way better. Here was the most important feedback from this round:</p>
                 </br>
                 <ul>
-                    <li>Add delays to doors in the second boss wave so enemies don’t all spawn at once</li>
+                    <li>Add delays to doors in the second boss wave so enemies don't all spawn at once</li>
                     <li>Remove zombies from the boss fight to prevent soft locking</li>
                     <li>Replace the rocket launcher with a grenade launcher, since rockets cause too many accidental deaths in small rooms</li>
                     <li>Make the boss drop from the roof to prevent camping behind the central pillar</li>
                     <li>Add more paths, especially in the sewer section</li>
                     <li>Add more height variety where possible</li>
                     <li>Include a bit more decoration here and there</li>
-                    <li>Widen the bridge on the water platform so players don’t accidentally fall into the secret</li>
-                    <li>Increase the size of the final arch when swimming up so players don’t get stuck</li>
+                    <li>Widen the bridge on the water platform so players don't accidentally fall into the secret</li>
+                    <li>Increase the size of the final arch when swimming up so players don't get stuck</li>
                 </ul>
             </div>
         </div>

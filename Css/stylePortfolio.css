@@ -6,10 +6,6 @@ body {
     padding-top: 80px;
 }
 
-#portfolio h1 {
-    display: none;
-}
-
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(260px, 1fr));
